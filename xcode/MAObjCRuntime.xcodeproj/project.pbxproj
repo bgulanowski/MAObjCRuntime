@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22A07AE515241A3B008A2A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A07AE415241A3B008A2A36 /* Foundation.framework */; };
+		22A07AF315241A3B008A2A36 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A07AF215241A3B008A2A36 /* SenTestingKit.framework */; };
 		22A07AF515241A3B008A2A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A07AF415241A3B008A2A36 /* UIKit.framework */; };
 		22A07AF615241A3B008A2A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A07AE415241A3B008A2A36 /* Foundation.framework */; };
 		22A07AF915241A3B008A2A36 /* libMAObjCRuntime_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A07AE215241A3B008A2A36 /* libMAObjCRuntime_iOS.a */; };
@@ -25,6 +26,24 @@
 		794569F81481810F006AD2EB /* RTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 794569EF1481810F006AD2EB /* RTProperty.m */; };
 		794569F91481810F006AD2EB /* RTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 794569F11481810F006AD2EB /* RTProtocol.m */; };
 		794569FA1481810F006AD2EB /* RTUnregisteredClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 794569F31481810F006AD2EB /* RTUnregisteredClass.m */; };
+		8456BB861B82016600DEECBD /* MARTNSObject.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569E81481810F006AD2EB /* MARTNSObject.h */; };
+		8456BB871B82016600DEECBD /* RTIvar.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EA1481810F006AD2EB /* RTIvar.h */; };
+		8456BB881B82016600DEECBD /* RTMethod.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EC1481810F006AD2EB /* RTMethod.h */; };
+		8456BB891B82016600DEECBD /* RTProperty.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EE1481810F006AD2EB /* RTProperty.h */; };
+		8456BB8A1B82016600DEECBD /* RTProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569F01481810F006AD2EB /* RTProtocol.h */; };
+		8456BB8B1B82016600DEECBD /* RTUnregisteredClass.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569F21481810F006AD2EB /* RTUnregisteredClass.h */; };
+		8456BB8C1B82018200DEECBD /* MARTNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569E81481810F006AD2EB /* MARTNSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB8D1B82018200DEECBD /* RTIvar.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569EA1481810F006AD2EB /* RTIvar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB8E1B82018200DEECBD /* RTMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569EC1481810F006AD2EB /* RTMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB8F1B82018200DEECBD /* RTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569EE1481810F006AD2EB /* RTProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB901B82018200DEECBD /* RTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569F01481810F006AD2EB /* RTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB911B82018200DEECBD /* RTUnregisteredClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 794569F21481810F006AD2EB /* RTUnregisteredClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8456BB931B82025D00DEECBD /* MARTNSObject.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569E81481810F006AD2EB /* MARTNSObject.h */; };
+		8456BB941B82025D00DEECBD /* RTIvar.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EA1481810F006AD2EB /* RTIvar.h */; };
+		8456BB951B82025D00DEECBD /* RTMethod.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EC1481810F006AD2EB /* RTMethod.h */; };
+		8456BB961B82025D00DEECBD /* RTProperty.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569EE1481810F006AD2EB /* RTProperty.h */; };
+		8456BB971B82025D00DEECBD /* RTProtocol.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569F01481810F006AD2EB /* RTProtocol.h */; };
+		8456BB981B82025D00DEECBD /* RTUnregisteredClass.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 794569F21481810F006AD2EB /* RTUnregisteredClass.h */; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +57,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8456BB851B82014500DEECBD /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/MAObjCRuntime;
+			dstSubfolderSpec = 16;
+			files = (
+				8456BB861B82016600DEECBD /* MARTNSObject.h in Copy Headers */,
+				8456BB871B82016600DEECBD /* RTIvar.h in Copy Headers */,
+				8456BB881B82016600DEECBD /* RTMethod.h in Copy Headers */,
+				8456BB891B82016600DEECBD /* RTProperty.h in Copy Headers */,
+				8456BB8A1B82016600DEECBD /* RTProtocol.h in Copy Headers */,
+				8456BB8B1B82016600DEECBD /* RTUnregisteredClass.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8456BB921B82024700DEECBD /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8456BB931B82025D00DEECBD /* MARTNSObject.h in Copy Headers */,
+				8456BB941B82025D00DEECBD /* RTIvar.h in Copy Headers */,
+				8456BB951B82025D00DEECBD /* RTMethod.h in Copy Headers */,
+				8456BB961B82025D00DEECBD /* RTProperty.h in Copy Headers */,
+				8456BB971B82025D00DEECBD /* RTProtocol.h in Copy Headers */,
+				8456BB981B82025D00DEECBD /* RTUnregisteredClass.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		22A07AE215241A3B008A2A36 /* libMAObjCRuntime_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMAObjCRuntime_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A07AE415241A3B008A2A36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAObjCRuntime_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAObjCRuntime_iOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A07AF215241A3B008A2A36 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		22A07AF415241A3B008A2A36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		22A07B1015241B00008A2A36 /* Test_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test_iOS.h; path = ../Test_iOS.h; sourceTree = "<group>"; };
 		22A07B1115241B00008A2A36 /* Test_iOS.h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test_iOS.h.m; path = ../Test_iOS.h.m; sourceTree = "<group>"; };
@@ -76,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A07AF315241A3B008A2A36 /* SenTestingKit.framework in Frameworks */,
 				22A07AF515241A3B008A2A36 /* UIKit.framework in Frameworks */,
 				22A07AF615241A3B008A2A36 /* Foundation.framework in Frameworks */,
 				22A07AF915241A3B008A2A36 /* libMAObjCRuntime_iOS.a in Frameworks */,
@@ -132,7 +188,7 @@
 			children = (
 				8DD76FA10486AA7600D96B5E /* MAObjCRuntime */,
 				22A07AE215241A3B008A2A36 /* libMAObjCRuntime_iOS.a */,
-				22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.xctest */,
+				22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				22A07AE415241A3B008A2A36 /* Foundation.framework */,
+				22A07AF215241A3B008A2A36 /* SenTestingKit.framework */,
 				22A07AF415241A3B008A2A36 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -153,6 +210,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8456BB8C1B82018200DEECBD /* MARTNSObject.h in Headers */,
+				8456BB8D1B82018200DEECBD /* RTIvar.h in Headers */,
+				8456BB8E1B82018200DEECBD /* RTMethod.h in Headers */,
+				8456BB8F1B82018200DEECBD /* RTProperty.h in Headers */,
+				8456BB901B82018200DEECBD /* RTProtocol.h in Headers */,
+				8456BB911B82018200DEECBD /* RTUnregisteredClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +229,7 @@
 				22A07ADE15241A3B008A2A36 /* Sources */,
 				22A07ADF15241A3B008A2A36 /* Frameworks */,
 				22A07AE015241A3B008A2A36 /* Headers */,
+				8456BB921B82024700DEECBD /* Copy Headers */,
 			);
 			buildRules = (
 			);
@@ -192,8 +256,8 @@
 			);
 			name = MAObjCRuntime_iOSTests;
 			productName = MAObjCRuntime_iOSTests;
-			productReference = 22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 22A07AF115241A3B008A2A36 /* MAObjCRuntime_iOSTests.octest */;
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		8DD76F960486AA7600D96B5E /* MAObjCRuntime */ = {
 			isa = PBXNativeTarget;
@@ -201,6 +265,7 @@
 			buildPhases = (
 				8DD76F990486AA7600D96B5E /* Sources */,
 				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8456BB851B82014500DEECBD /* Copy Headers */,
 			);
 			buildRules = (
 			);
@@ -218,8 +283,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastTestingUpgradeCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "MAObjCRuntime" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -347,7 +411,7 @@
 		1DEB927908733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -360,6 +424,7 @@
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -371,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/MAObjCRuntime_iOS.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -395,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/MAObjCRuntime_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -414,10 +481,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -436,6 +504,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -443,10 +512,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MAObjCRuntime_Prefix.pch;
@@ -460,6 +530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
